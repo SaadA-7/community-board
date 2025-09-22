@@ -1,0 +1,59 @@
+.Event {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.Event:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Event h3 {
+  color: #3498db;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.Event .description {
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.Event .time {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.Event .location {
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+@media (max-width: 280px) {
+  .Event {
+    padding: 15px;
+  }
+  
+  .Event h3 {
+    font-size: 1.2em;
+    margin-bottom: 12px;
+  }
+  
+  .Event .description {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+  }
+  
+  .Event .time, 
+  .Event .location {
+    font-size: 0.9em;
+  }
+}
